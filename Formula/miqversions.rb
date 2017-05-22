@@ -9,6 +9,11 @@ class Miqversions < Formula
 
   depends_on "go" => :build
 
+  go_resource "github.com/olekukonko/tablewriter" do
+    url "https://github.com/olekukonko/tablewriter.git",
+      :revision => "febf2d34b54a69ce7530036c7503b1c9fbfdf0bb"
+  end
+
   def install
     ENV["GOPATH"] = buildpath
 
