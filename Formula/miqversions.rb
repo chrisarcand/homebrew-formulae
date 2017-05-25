@@ -9,6 +9,11 @@ class Miqversions < Formula
 
   head "https://github.com/chrisarcand/miqversions.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "e0a1763aa687e7f01ffc519d939b443428d77304f4b8d7c04a35545664beb3e0" => :sierra
+  end
+
   go_resource "github.com/olekukonko/tablewriter" do
     url "https://github.com/olekukonko/tablewriter.git",
       :revision => "febf2d34b54a69ce7530036c7503b1c9fbfdf0bb"
