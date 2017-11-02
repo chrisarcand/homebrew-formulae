@@ -4,15 +4,15 @@ require "language/go"
 class Miqversions < Formula
   desc "Because naming is hard. Really, really hard."
   homepage "https://github.com/chrisarcand/miqversions"
-  url "https://github.com/chrisarcand/miqversions/archive/v1.0.1.tar.gz"
-  sha256 "6f663ab63148c0b573461e67ae687da79e7c2ac12984a089b2eaad97083b2db3"
+  url "https://github.com/chrisarcand/miqversions/archive/v1.0.2.tar.gz"
+  sha256 "98ca65fd959688610acddedabb435298433a1eddd6b87693cc278a96c9237063"
 
   head "https://github.com/chrisarcand/miqversions.git"
 
   bottle do
-    root_url "https://github.com/chrisarcand/miqversions/releases/download/v1.0.0"
+    root_url "https://github.com/chrisarcand/miqversions/releases/download/v1.0.2"
     cellar :any_skip_relocation
-    sha256 "b3a804f6f7a6d65247f058a1b548165a00d5f21fa0f8b4163d33cec9be318736" => :sierra
+    sha256 "a1ee66dec58af47a9a49944063dc24e0915bd660699580455fafd13cdc7234e6" => :sierra
   end
 
   go_resource "github.com/olekukonko/tablewriter" do
